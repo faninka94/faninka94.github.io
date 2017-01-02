@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+  <html>
+     <head>
+     	<meta charset="UTF-8">
+     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+     	<link rel="stylesheet" href="font-awesome.min.css">
+     	<link rel="stylesheet" href="onepcssgrid.css" />
+     	<link rel="stylesheet" href="slick.css" />
+		<link rel="stylesheet" href="slick-theme.css" />
+
+
+        <title>The Coffee Academics</title>
+        
+        
+        		<style>
+
+				* {
+					margin:0;
+				}
+
+				html, body {
+					height: 100%;
+
+				}
+
+				h1,h2,h3,h4,h5,h6 {
+					margin-bottom: 20px;
+					font-family: "Century Gothic";	
+				}
+				p {
+					font-family: "Helvetica";
+				}
+
+				nav {
+					position: fixed;
+					width: 100%;
+					height: 50px;
+					background-color: rgba(0,0,0,.5);
+					z-index: 99;
+					text-align: center;
+					top: 0;
+				}
+				nav a {
+					text-decoration: none;
+					color: #fff;
+					font-family: "Century Gothic";		
+					font-size: 20px;
+					margin-left: 30px;
+					line-height: 50px;
+					padding: 40px;
+					
+				}
+				
+				.social {
+					float: right;
+					display: inline;
+					position: absolute;
+					top: 100px;
+					right: 100px;
+				}
+				.sect {
+					height: 50vh;
+					width: 100%;
+					background-size: cover;
+					background-repeat: no-repeat;
+					background-attachment: fixed;
+					float: left;
+
+				}
+				.sect h1 {
+					text-align: center;
+					font-size: 62px;
+					font-family: "Century Gothic";	
+					color: #fff;
+					display: table-cell;
+					vertical-align: middle;
+				}
+
+				.subSection {
+					height: 50%;
+					background-color: #fff;
+				}
+				.about{
+					display: inline;
+				}
+				.about img{
+					padding: 50px 30px 50px 30px;
+					float: left;
+				}
+				.about article{
+					margin-left: auto;
+       				margin-right: auto;
+					font-size: 14px;
+					padding: 50px 30px 50px 30px;
+					
+				}
+				
+				.sectOne {
+					background-image: url("006.png");
+					display: table;
+					position: relative;
+					height: 100vh;
+				}
+				.sectTwo {
+					background-image: url("002.jpg");
+				}
+				.sectThree {
+					background-image: url("005.jpg");
+				}
+				.sectFour {
+					background-image: url("001.jpg");
+				}
+				.sectFive {
+					background-image: url("007.jpg");
+				}
+			
+				.slide1 {
+				background: url(fon6.jpg) no-repeat;
+				background-size: cover;
+				background-position: center center;
+				}
+
+				.slide2 {
+				background: url(krr.jpg) no-repeat;
+				background-size: cover;
+				background-position: center center;
+				}
+
+				.slider-top {
+					overflow: hidden;
+					float: left;
+					width: 100%;
+					margin-bottom: 0 !important;
+				}
+
+				.slide {
+					outline: none;
+				}
+
+				.slider-top .slick-dots {
+					bottom: 15px;
+				}
+
+				.slide .onepcssgrid-1200 {
+					position: relative;
+					height: 100%;
+				}
+				
+				.slider-content {
+					
+					color: #fff;
+					float: left;
+					max-width: 470px;
+					box-sizing: border-box;
+					position: relative;
+					padding: 10% 0;
+				}
+
+				.promo-review {
+					margin: 0;
+					padding: 0 20px;
+					box-sizing: border-box;
+					outline: none;
+				}
+
+
+				.promo-review a {
+						width: 100%;
+						height: 400px;
+						float: left;
+						position: relative;
+						margin-top: 30px;
+						background: url(town1.jpg) no-repeat;
+						background-size: cover;
+						background-position: center center;
+						margin-bottom: 15px;
+						outline: none;
+					}
+
+					.promo-review span {
+						text-align: center;
+						width: 100%;
+						float: left;
+						padding: 0 20px;
+						box-sizing: border-box;
+					}
+
+					.promo-review span:last-child {
+						margin-top: 15px;
+						font-size: 14px;
+						opacity: .7;
+					}
+					
+
+					footer {
+						background: rgba(0,0,0,.5);
+
+						padding: 6% 0;
+						float: left;
+						width: 100%;
+						color: #fff;
+					}
+
+					footer ul li a {
+						color: #fff;
+						opacity: .7;
+						padding: 7px 0;
+						float: left;
+						width: 100%;
+					}
+
+					.slider-top .slick-arrow {
+						display: none !important;
+					}
+
+					.full-width-container {
+						width: 100%;
+						float: left;
+						overflow: hidden;
+					}
+
+					form {
+						float: left;
+						width: 100%;
+						padding: 0% 15% 10%;
+						box-sizing:border-box;
+					}
+
+					form label {
+						width: 100%;
+						float: left;
+						margin-bottom: 20px;
+						line-height: 1.5;
+						font-size: 14px;
+						color: #898989;
+					}
+
+					form label input, 
+					form label textarea {
+						float: left;
+						width: 100%;
+						padding: 14px;
+						background: #fff;
+						border: 1px solid #e1e1e1;
+						color: #666;
+						box-sizing:border-box;
+						outline: none;
+					}
+
+					form label input[type="submit"] {
+						color: #fff;
+						background: #1570a0;
+						border: none;
+						font-size: 16px;
+						cursor: pointer;
+					}
+
+					.inner-wrapper {
+						float: left;
+						width: 100%;
+					}
+
+					form h2 {
+						font-size: 18px;
+						text-align: center;
+						color: #898989;
+						line-height: 1.4;
+						margin: 40px auto 60px;
+					}
+
+					.half-fields {
+						width: 49%;
+					}
+
+					.f-right {
+						float: right !important;
+					}
+
+
+				</style>
+				
+     </head>
+     <body>
+		<nav>
+			<a href="#home">НАЧАЛО</a>
+			<a href="#aboutus">ЗА НАС</a>
+			<a href="#menu">МЕНЮ</a>
+			<a href="#promo">ПРОМОЦИИ</a>
+			<a href="#news">НОВИНИ</a>
+			<a href="#contacts">КОНТАКТИ</a>
+		</nav>
+		
+		
+		<div class="sect sectOne" id="home">
+			<div class="social">
+				<a href="http://www.facebook.com" target="_blank"><img src="Facebook.png" /></a>
+				<a href="http://www.plus.google.com" target="_blank"><img src="Google+.png" /></a>
+				<a href="http://www.instagram.com" target="_blank"><img src="Instagram.png" /></a>
+				<a href="http://www.twitter.com" target="_blank"><img src="Twitter.png" /></a>
+				<a href="http://www.linkedin.com" target="_blank"><img src="Linkedin.png" /></a>
+			</div>
+			<h1>Най-доброто кафе в града</h1>
+		</div>	
+		<div class="onepcssgrid-1200" >
+			<div class="onerow mar-5 mar-5b" id="aboutus">
+				<div class="col4"><img src="about.jpg" /></div>
+				<div class="col1"></div>
+				<div class="col7 last">
+					<article>
+					<h1>За нас</h1>
+					<p>От 2015г., The Coffee Academics се реализира в регионален мащаб, заемайки мястото си на сцената на кафето. Ние сме горди да предложим една колекция от изискани продукти от кафе и експертни услуги, които се грижат за любопитните кафе начинаещи, така и за претенциозните любители на кафето. От първоначалния подбор на кафе произход и начин за печене, с микро-настройка на смес пропорционално и вендузи, всяка стъпка се прави с грижа, страст и безкомпромисно търсене на най-високо качество.</p>
+					<p>Като част от нашето интелектуално преследване на перфектното кафе, ние се стремим винаги да намираме нови начини за свързване с нашите потребители. Независимо дали сте в уюта на дома, останали в офиса или някъде в града, The Coffee Academics е винаги добър избор.</p>
+					</article>
+				</div>
+			</div>
+		</div>
+		<div class="sect sectTwo"></div>
+		<div class="subSection menu">
+		<div class="slider-top" id="menu">
+			<div class="slide slide1">
+				<div class="onepcssgrid-1200" id="menu">
+					<div class="onerow">
+						<div class="col12">
+							<div class="slider-content blue">
+								<h1>Напитки</h1>
+								<h4>Еспресо 2,50лв.<br/>Еспресо с шоколад и мляко 4,50лв.<br/>Капучино 3,50лв.<br/>Лате Макиато 4,00лв.<br/>Ирландско кафе 5,00лв.<br/>Чай по английски, черен, индийски, японски, зелен, билков, плодов 3,00лв.
+								</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="slide slide2">
+				<div class="onepcssgrid-1200">
+					<div class="onerow">
+						<div class="col12">
+							<div class="slider-content blue">
+								<h1>За хапване</h1>
+								<h4>Асортимент от прясно изпечени плодови кексове и мъфини 5,50лв.<br/>Мюсли с плодове, овес, бадем 6,00лв.<br/>Белгийски вафлички с ванилов пълнеж 7,50лв.<br/>Бъркани яйца, печени червени чушки и чесън, със зелен лук 7,50лв.<br/>Палачинки с боровинки и масло 8,50лв.</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="sect sectThree"></div>
+		<div class="full-width-container">
+			<div class="onepcssgrid-1200" id="promo">
+				<div class="onerow mar-5b promotions">
+					<div class="col4 promo-review">
+						<a href="" style="background: url('promo1.jpg') no-repeat"></a>
+						<span>HAPPY HOUR 12:00 - 14:00</span>
+						<span>50% намаление <br/>ЕСПРЕСО и КАПУЧИНО</span>
+					</div>
+					<div class="col4 promo-review">
+						<a href="" style="background: url('promo2.jpg') no-repeat"></a>
+						<span>За Успешен СТАРТ на седмицата</span>
+						<span>вземи голямо кафе за цената на малко<br/>ПОНЕДЕЛНИК от 7:00 до 10:00</span>
+					</div>
+					<div class="col4 promo-review last">
+						<a href="" style="background: url('promo3.jpg') no-repeat"></a>
+						<span>Опитай Вкуса на КОЛУМБИЯ</span>
+						<span>Само във ВТОРНИК огненото кафе е<br/>на половин цена</span>
+					</div>
+					<div class="col4 promo-review">
+						<a href="" style="background: url('promo4.jpg') no-repeat"></a>
+						<span>СПОДЕЛИ КАФЕ</span>
+						<span>вземи 2 за цената на 1<br/>малко еспресо или малко капучино<br/>ВСЯКА СРЯДА</span>
+					</div>
+					<div class="col4 promo-review">
+						<a href="" style="background: url('Capture1.png') no-repeat"></a>
+						<span>Sunday Funday</span>
+						<span>Заповядай в НЕДЕЛЯ<br/>Снимай кафето си и го сподели в социалните мрежи с<br/>#FundayAtAcademicsCafe<br/>Заповядай на бара и вземи безплатно ЛАТЕ с БИСКВИТКА</span>
+					</div>
+					<div class="col4 promo-review last">
+						<a href="" style="background: url('promo6.jpg') no-repeat"></a>
+						<span>СЪБОТА ВЕЧЕР</span>
+						<span>Заповядайте на чаша топъл чай<br/>50% отстъпка за цената на голяма каничка чай</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="sect sectFour"></div>
+		<div class="subSection news">
+			<div class="onepcssgrid-1200">
+			<div class="onerow mar-10 mar-10b" id="news">
+				<div class="col6"><img src="Capture7.png" /></div>
+				<div class="col6 last">
+					<h3 class="t-left mar-10">Предстоящо откриване на нов обект</h3>
+					<h6>дата: 10.12.2016г. , град Варна</h6>
+					<span class="t-left mar-50">На 20.01.2017г. предстои откриване на новото ни кафене на бул."Княз Борис I-ви" №58. Ще има безплатен кетъринг, включващ храна и напитки за гостите. Ще се радваме да Ви видим сред нас. Заповядайте!</span>
+				</div>
+				<div class="col6 last">
+					<h3 class="t-left mar-10">The Coffee Academics става на 1 година!</h3>
+					<h6>дата: 15.10.2016г. , град Варна</h6>
+					<span class="t-left mar-50">Заповядайте на 25.10.2016г заедно да отпразнуваме рождения ден на Coffee Academics! Ще ви очакват много изненади и томбола с награда - почивка за двама в Доминикана. Ще Ви чакаме, ще има торта :)</span>
+				</div>
+			</div>
+		</div>
+
+		</div>
+		<div class="sect sectFive"></div>
+		<div class="onepcssgrid-1200">
+			<div class="onerow mar-10 mar-10b">
+				<div class="subSection contacts onerow" id="contacts">
+					 <h3 class="t-center">Намерете ни на адрес: бул. Приморски парк II 482, 9010 Варна</h3>
+		    	<iframe style="width:100%;margin-top:40px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2907.7210426734!2d27.952711315483686!3d43.21533997913868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a4569f88c74c5d%3A0x57056bede69d3cab!2z0J_QuNC60LDQtNC40LvQuCDQv9Cw0YDQug!5e0!3m2!1sbg!2suk!4v1483320237631" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+				</div>
+			</div>
+			<div class="onerow">
+				<div class="col2"></div>
+				<form name="form1" enctype="multipart/form-data" method="post" action="form.php" class="col8">
+					<label class="half-fields">First Name
+						<input type="text" name="first_name" required/>
+					</label>
+					<label class="half-fields f-right">Last Name
+						<input type="text" name="last_name" required/>
+					</label>
+					<label class="half-fields">Phone Number
+						<input type="text" name="telephone" required/>
+					</label> 
+					<label class="half-fields f-right">Email
+						<input name="email" style="padding:12px;" type="text" />
+					</label>
+					<label>Notes
+						<textarea name="comments" ></textarea>
+					</label> 
+					<label>
+						<input type="submit" name="button" value="Submit" />
+					</label>
+					<!--<a href="http://simplybusinessclass.com" class="go-back">Go back to simplybusinessclass.com</a>-->
+				</form>
+				<div class="col2 last"></div>
+			</div>
+		</div>
+
+		<footer>
+			<div class="onepcssgrid-1200">
+				<div class="onerow">
+					<div class="col4">
+						<h4 class="t-center">Работно време</h4>
+						<h6 class="t-center">всеки ден <br/>08:00ч. - 22:00ч.<br/><br/>
+							бул. Приморски парк II 48, 9010 Варна<br/>0887 746 070</h6>
+					</div>
+					<div class="social">
+						<a href="http://www.facebook.com" target="_blank"><img src="Facebook.png" /></a>
+						<a href="http://www.plus.google.com" target="_blank"><img src="Google+.png" /></a>
+						<a href="http://www.instagram.com" target="_blank"><img src="Instagram.png" /></a>
+						<a href="http://www.twitter.com" target="_blank"><img src="Twitter.png" /></a>
+						<a href="http://www.linkedin.com" target="_blank"><img src="Linkedin.png" /></a>
+					</div>
+					<div class="col3">
+						<h4 class="mar-20pb">The Coffee Academics</h4>
+						<ul>
+							<li><a href="#">Начало</a></li>
+							<li><a href="#aboutus">За нас</a></li>
+							<li><a href="#menu">Меню</a></li>
+							<li><a href="#promo">Промоции</a></li>
+							<li><a href="#news">Новини</a></li>
+						</ul>
+					</div>
+					<div class="col3">
+						<h4 class="mar-20pb">Нашите партньори</h4>
+						<div style="color: #fff; opacity: .9;" >
+							<ul>
+							<li><a href="http://www.lavazza.com" target="_blank">Lavazza</a></li>
+							<li><a href="http://www.lindt.com" target="_blank">Lindt</a></li>
+							<li><a href="http://www.bmw-mcarvarna.bg" target="_blank">Varna Cars</a></li>
+							<li><a href="http://www.dskbank.bg" target="_blank">DSK bank</a></li>
+							<li><a href="http://www.turkishairlines.com" target="_blank">Turkish Airlines</a></li>
+							<li><a href="http://www.nedelya.com" target="_blank">Сладкарница Неделя</a></li>
+						</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+  <script src="slick.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">		
+		    $(function() {
+
+			  
+		      $(".slider-top").slick({
+		        dots: true,
+		        slidesToShow: 1
+		      });
+
+		      $(".promotions").slick({
+		        infinite: true,
+				slidesToShow: 3,
+				slidesToScroll: 3,
+		        autoplay: true,
+		        dots: true,
+  				autoplaySpeed: 3000
+		      });
+
+		      $('a[href^="#"]').on('click', function(event) {
+			    var target = $(this.getAttribute('href'));
+			    if( target.length ) {
+			        event.preventDefault();
+			        $('html, body').stop().animate({
+			            scrollTop: target.offset().top
+			        }, 1000);
+			    }
+			});
+
+			  //
+			  //$('.slider-btn').click(function(event) {
+			//	$(".slider-top").slick('slickNext');
+			 //   event.stopPropagation();
+			//	return false;
+			 // });
+		    });
+		  </script>
+     </body>
+  </html>
